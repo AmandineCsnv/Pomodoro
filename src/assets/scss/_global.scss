@@ -1,0 +1,32 @@
+@use "./var";
+
+:root {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: var.$smallBackground-light;
+}
+
+.bodyDarkMode {
+  background-color: var.$smallBackground-dark;
+}
+a {
+  text-decoration: none;
+  color: var.$smallBackground-light;
+}
+
+label {
+  display: none;
+}
+
+button {
+  border: none;
+}
+
+input {
+  border: none;
+  color: var.$smallBackground-light;
+}

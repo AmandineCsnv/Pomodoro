@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Utilisez le pomodoro permet d'être plus productif, travaillez moins mais plus efficacement !">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🕓</text></svg>"></link>
+    <link rel="stylesheet" href="./assets/scss/index.scss">
+    <script defer src="./assets/script/script.js"></script>
+    <title>Pomodoro</title>
+</head>
+<body>
+    <main class="container">
+    <h1>Pomodoro</h1>
+    <h2>Choisissez :</h2>
+    <div class="work-time">
+    <h3 class="work-time--title">Temps de travail (en minutes) :</h3>
+    <form action="" method="get">
+        <label for="work-time-timer">Temps de travail</label>
+        <input type="number" name="work" id="work-time-timer" value="30" min="00" max="60" step="5">
+    </form>
+    <div class="break-time">
+    <h3 class="break-time--title">Temps de pause (en minutes) :</h3>
+    <form action="" method="get">
+        <label for="break-time-timer">Temps de travail</label>
+        <input type="number" name="break" id="break-time-timer" value="10" min="00" max="60" step="5">
+
+        <button class="start"><a href="./assets/pages/work.html">Go !</a></button>
+    </form>
+    </div>
+    </main>
+    <footer>
+        <p class="copyright">© AmandineCsnv</p>
+    </footer>
+</body>
+</html>
