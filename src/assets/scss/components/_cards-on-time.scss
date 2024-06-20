@@ -1,0 +1,16 @@
+@use "../var";
+@use "../mixin";
+h2 {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.788);
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.63);
+}

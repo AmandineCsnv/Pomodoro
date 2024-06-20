@@ -13,27 +13,28 @@
     <title>Pomodoro</title>
 </head>
 <body>
-    <main class="container">
+    <main class="container container-dark">
+        <img class="logo-theme" src="./assets/img/dark_mode.svg" alt="logo thème">
     <h1>Pomodoro</h1>
     <h2>Choisissez :</h2>
     <div class="work-time">
     <h3 class="work-time--title">Temps de travail (en minutes) :</h3>
-    <form action="" method="get">
+    <form action="./assets/pages/work.html" method="get">
         <label for="work-time-timer">Temps de travail</label>
-        <input type="number" name="work" id="work-time-timer" value="30" min="00" max="60" step="5">
+        <input type="number" name="work" id="work-time-timer" value="30.00" min="00.00" max="60.00" step="05.00">
     </form>
     <div class="break-time">
     <h3 class="break-time--title">Temps de pause (en minutes) :</h3>
-    <form action="" method="get">
-        <label for="break-time-timer">Temps de travail</label>
-        <input type="number" name="break" id="break-time-timer" value="10" min="00" max="60" step="5">
+    <form action="./assets/pages/work.html" method="get">
+        <label for="break-time-timer">Temps de pause</label>
+        <input type="number" name="break" id="break-time-timer" value="10.00" min="00.00" max="60.00" step="05.00">
 
         <button class="start"><a href="./assets/pages/work.html">Go !</a></button>
     </form>
     </div>
-    </main>
     <footer>
         <p class="copyright">© AmandineCsnv</p>
     </footer>
+    </main>
 </body>
 </html>

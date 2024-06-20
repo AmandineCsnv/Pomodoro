@@ -1,17 +1,27 @@
 @use "./var";
-
-:root {
+@use "./mixin";
+root {
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
   color: white;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
   background-color: var.$smallBackground-light;
+  @include mixin.big {
+    background-color: white;
+  }
 }
 
-.bodyDarkMode {
+.body-dark {
   background-color: var.$smallBackground-dark;
+  @include mixin.big {
+    background-color: var.$smallBackground-dark;
+  }
 }
 a {
   text-decoration: none;
@@ -24,9 +34,99 @@ label {
 
 button {
   border: none;
+  background-color: rgba(255, 255, 255, 0.856);
+  margin: 4rem 0 3rem 0;
+  padding: 0.8rem 4rem;
+  border-radius: 5%;
+  box-shadow: 1px 2px 2px rgba(168, 151, 151, 0.541);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 2px rgba(180, 180, 180, 0.404);
 }
 
 input {
   border: none;
   color: var.$smallBackground-light;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.856);
+  margin: 1rem;
+  @include mixin.medium {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+.input-dark {
+  color: var.$smallBackground-dark;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mixin.big {
+    margin-top: 5rem;
+    background-color: var.$smallBackground-light;
+    width: 40%;
+    color: white;
+    padding-top: 2rem;
+    border-radius: 20px;
+    box-shadow: 1px 5px 5px rgba(168, 151, 151, 0.541);
+  }
+}
+.container-dark {
+  @include mixin.big {
+    background-color: var.$smallBackground-dark;
+  }
+}
+.logo-theme {
+  position: fixed;
+  top: 4%;
+  left: 80%;
+  width: 6%;
+  @include mixin.medium {
+    top: 4%;
+    left: 75%;
+    width: 4%;
+  }
+  @include mixin.big {
+    top: 15%;
+    left: 64%;
+    width: 2%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+h1 {
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  box-shadow: 1px 5px 5px rgba(168, 151, 151, 0.541);
+  border-radius: 5%;
+  letter-spacing: 0.1rem;
+}
+
+h2 {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.788);
+}
+
+h3 {
+  font-size: 1.3rem;
+  @include mixin.medium {
+    font-size: 1.5rem;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  // margin-top: 5rem;
 }
