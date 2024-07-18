@@ -1,0 +1,8 @@
+@use "../var";
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  background-color: var.$smallBackground-dark;
+  width: 103%;
+}

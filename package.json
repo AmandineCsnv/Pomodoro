@@ -14,5 +14,8 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
+  },
+  "dependencies": {
+    "node-dev": "^8.0.0"
   }
 }
